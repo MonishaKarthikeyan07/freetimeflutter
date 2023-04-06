@@ -1,0 +1,6 @@
+void main(){
+  List<dynamic> fruits = ['apple','orange','guava'];
+  fruits.add('pome');
+  fruits.remove('orange');
+  print(fruits);
+}
