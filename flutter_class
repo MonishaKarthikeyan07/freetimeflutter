@@ -15,8 +15,8 @@ void main(){
 
 class user{
   
-  String name;
-  int age;
+  String name='def';
+  int age=30;
   
   user(String name,int age){
   this.name = name;
