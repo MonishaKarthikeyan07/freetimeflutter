@@ -1,0 +1,35 @@
+void main(){
+  user user1 = user('abc',31);
+  print(user1.name);
+  
+  
+  user user2 = user('efg',23);
+  print(user2.name);
+  
+  superuser user3 = superuser('klm',21);
+  print(user3.name);
+  user3.publish();
+}
+  
+  
+
+class user{
+  
+  String name;
+  int age;
+  
+  user(String name,int age){
+  this.name = name;
+  this.age = age;
+  }
+  
+}
+
+class superuser extends user{
+  
+  superuser(String name,int age):super(name,age);
+ 
+  void publish(){
+    print('published');
+  }
+}
